@@ -6,7 +6,7 @@ const reelSchema = z.object({
   thumbnail_url: z.string().url(),
   caption: z.string().optional(),
   views: z.number().int().min(0),
-  created_at: z.string(),
+  rated_at: z.string().optional(),
 });
 
 const reelsSchema = z.array(reelSchema);
