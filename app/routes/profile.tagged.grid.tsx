@@ -5,7 +5,7 @@ import { PostCard } from "~/components/PostCard";
 
 export async function loader() {
   try {
-    const response = await api.get("/tagged");
+    const response = await api.get("/tagged/grid");
     return taggedsSchema.parse(response.data);
   } catch (error) {
     console.error("Failed to load tagged posts:", error);
