@@ -1,7 +1,7 @@
 import type { Highlight } from "~/schemas/highlight.schema";
-import { Link } from "@remix-run/react";
+import { Link } from "react-router";
 
-export function HighlightBubble({ highlight }: { highlight: Highlight }) {
+export default function HighlightBubble({ highlight }: { highlight: Highlight }) {
   return (
     <Link
       to={`/profile/highlights/${highlight.id}`}
