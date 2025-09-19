@@ -14,13 +14,13 @@ export function BottomNav() {
           🔍
         </div>
         <Link
-          to='/home'
+          to='/create'
           className='inline-flex flex-col items-center justify-center px-5'
         >
           ➕
         </Link>
         <Link
-          to='/create'
+          to='/'
           className='inline-flex flex-col items-center justify-center px-5'
         >
           Reels
